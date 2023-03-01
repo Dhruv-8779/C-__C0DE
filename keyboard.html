@@ -1,0 +1,28 @@
+E html>
+<html>
+	<head>
+		<title>keyboard events attributes</title>
+		<script type="text/javascript">
+			function keyDown() {
+				// body...
+				Ducument.body.style.background = "yellow";
+			}
+			function keyPress() {
+				Document.body.style.background = "blue";
+			}
+			function keyUp() {
+				Ducument.body.style.background = "lightgreen";
+			}
+		</script>
+	</head>
+	<body>
+		<form action="" method="">
+			<label> First name:</label>
+			<input type="text" name="firstname" onkeydown="keyDown()" /> <br /><br />
+			<label> last name:</label>
+			<input type="text" name="lastname" onkeypress="keyPress()" /> <br /><br />
+			<label> User name:</label>
+			<input type="text" name="username" onkeyup="keyUp()" /> <br /><br />
+		</form>
+	</body>
+</html>

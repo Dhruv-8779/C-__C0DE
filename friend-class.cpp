@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+ class A
+ {
+     private:
+       int a,b;
+       public:
+       void input()
+       {
+         a=10; b=20;
+       } 
+       friend class B;  //frirnd class     
+ };
+ class B
+ {
+  private:
+  int c;
+  public:
+  void add(A r)
+  {
+    c=r.a+r.b;
+    cout<<"Add :"<<c;
+  }
+ };
+int main()
+{
+ A a;
+ a.input();
+ B obj;
+ obj.add(a);
+    return 0;
+}
